@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>login page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/angular.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+</head>
+<body style="background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-clear-531880.jpg&fm=jpg/uploads/2019/08/beach-Seaport-During-Daytime-nature.jpeg');background-size: cover;background-repeat: no-repeat;" ng-app="myApp" >
+    <div>
+        <div class="container">
+            <div class="col-md-6 col-md-offset-3" ng-controller="myController">
+                <form class="form-group">
+                    <h1 align="center"><span class="glyphicon glyphicon-user" ></span>Login</h1>
+                    <label>username</label>
+                    <input class="form-control" type="text" name="Name" placeholder="enter your name" required="" ng-model="signin.username">
+                    <br>
+                    <!-- <label>Employee_id:</label>
+                    <input class="form-control" type="text" name="Employee_id"  placeholder="enter your Employee id" required="" ng-model="signin.Employee_id">
+                    <br> -->
+                    <label>password</label>
+                    <input class="form-control" type="password" name="password"  placeholder="enter your password"  required=""
+                     ng-model="signin.password"><br>
+                    <!--<a href="/forget"><div align="right" style="color:white;font-size: 25px">Forgot password</div></a><br>
+                    -->
+                    
+                    <button class="btn btn-info" ng-click="login(signin)"> submit </button>
+
+                </form>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+
+</html>
